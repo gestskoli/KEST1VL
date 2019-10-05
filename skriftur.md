@@ -35,6 +35,10 @@ echo "Þrír fyrstu stafirnir í stafrófinu eru $texti"
 ```bash
 teljari=0
 teljari=$(($teljari + 1))
+
+a=10
+b=20
+c=$(($a + $b))
 ```
 
 ## Samanburðar- og rökvirkjar fyrir ```test```
