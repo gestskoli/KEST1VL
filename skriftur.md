@@ -15,7 +15,7 @@ echo "Í dag er $(date)"
 Breytunöfn mega byrja á bókstaf eða undirstriki (_)
 ### Gildi sett í breytur
 ```bash 
-tala=123
+tala=123 # ekki má vera bil (e. space) við samasem merkið
 texti=ABC
 ```
 Nota má skipunina ```read``` til að lesa inn frá notanda.
@@ -31,6 +31,12 @@ echo "Þú heitir $nafn"
 echo $tala
 echo "Þrír fyrstu stafirnir í stafrófinu eru $texti"
 ```
+### Reiknað með breytum
+```bash
+teljari=0
+teljari=$(($teljari + 1))
+```
+
 ## Samanburðar- og rökvirkjar fyrir ```test```
 Þegar bera þarf saman hluti í bash er notað ```test```.
 ```bash
@@ -133,7 +139,7 @@ esac
 ### for
 ```bash
 #!/bin/bash
-afangar="FORR1FG KEST1TR VEFÞ1VG"
+afangar="FORR1FG KEST1VL VEFÞ1VG VERK1VS"
 for afangi in $afangar
 do
   echo "Ég er í $afangi"
