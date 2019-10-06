@@ -4,7 +4,7 @@
 Til að skrifa á skjá er skipunin ```echo``` notuð.
 ```bash
 echo Texti
-echo "Texti með bilum"
+echo "Texti með bilum" 
 ```
 Ef skrifa á út útkomu úr skipun þarf annaðhvort að setja ` utan um skipunina eða $().
 ```bash
@@ -23,6 +23,13 @@ Nota má skipunina ```read``` til að lesa inn frá notanda.
 echo -n "Hvað heitir þú? "
 read nafn
 echo "Þú heitir $nafn"
+
+# eða
+read -p "Hvað heitir þú? " nafn
+echo "Halló $nafn"
+
+read -p "Sláðu inn þrjár tölur: " tala1 tala2 tala3
+echo "Þú slóst inn $tala1, $tala2 og $tala3."
 ```
 
 ### Lesið úr breytu
@@ -36,9 +43,9 @@ echo "Þrír fyrstu stafirnir í stafrófinu eru $texti"
 teljari=0
 teljari=$(($teljari + 1))
 
-a=10
-b=20
-c=$(($a + $b))
+a=20
+b=10
+c=$(($a - $b))
 ```
 
 ## Samanburðar- og rökvirkjar fyrir ```test```
@@ -58,6 +65,7 @@ test -f ~/skra.txt
 a=10
 b=20
 [ $a -eq $b ]
+# ATH. það verður að vera bil á eftir [ og á undan ]
 ```
 ```bash
 [ -f ~/skra.txt ]
@@ -156,6 +164,24 @@ for afangi in $afangar; do
   echo "Ég er í $afangi"
 done
 ```
+#### Aðrar útfærslur af ```if``` 
+```bash
+for stafur in A B C D
+do
+  echo $stafur
+done
+
+for tala in {1..10}
+do
+  echo $tala
+done
+
+for (( i=1 ; i<=10 ; i++ ))
+do
+  echo $i
+done
+```
+
 ### while
 ```bash
 #!/bin/bash
