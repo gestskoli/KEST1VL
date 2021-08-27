@@ -1,4 +1,4 @@
-# Uppsetning á Windows Subsystem for Linux
+# Uppsetning á Ubuntu með Windows Subsystem for Linux
 
 Hægri smellið á Windows táknið og veljið **Apps and Features**
 
