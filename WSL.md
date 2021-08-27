@@ -6,7 +6,7 @@ Hægri smellið á Windows táknið og veljið **Apps and Features**
 
 ---
 
-Í Apps and Features glugganum veljið **Programs and Features**
+Í Apps and Features glugganum veljið **Programs and Features**. Ef Programs and Features sést ekki skrollið þá neðst í App and Features glugganum.
 
 ![Programs and Features](./Myndir/ProgramsAndFeatures.PNG)
 
