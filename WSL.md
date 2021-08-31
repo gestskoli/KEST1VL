@@ -28,9 +28,7 @@ Hakið svo við **Windows Subsystem for Linux**
 
 ---
 
-Þegar tölvan hefur verið endurræst á að opna **Microsoft Store**
-
-![Microsoft Store](./Myndir/AppStoreIcon.PNG)
+Þegar tölvan hefur verið endurræst á að opna **Microsoft Store** ![Microsoft Store](./Myndir/AppStoreIcon.PNG)
 
 ---
 
@@ -70,7 +68,11 @@ Næst þarf að niðurhala Ubunut
 
 ---
 
-Þegar Ubuntu hefur klárað að ræsa þarf að búa sig til sem notanda. **ATH. þegar lykilorðið er slegið inn birtast hvorki stafir né tákn, lykilorðið er samt lesið inn.**
+Þegar Ubuntu hefur klárað að ræsa þarf að búa sig til sem notanda. 
+
+**Athuga** 
+- Notendanafn má ekki innihalda hástafi og má ekki byrja á tölustaf.
+- Þegar lykilorðið er slegið inn birtast hvorki stafir né tákn, lykilorðið er samt lesið inn.
 
 ![Notandi](./Myndir/User.PNG)
 
