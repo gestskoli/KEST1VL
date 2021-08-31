@@ -70,7 +70,7 @@ Næst þarf að niðurhala Ubunut
 
 ---
 
-Þegar Ubuntu hefur klárað að ræsa þarf að búa sig til sem notanda
+Þegar Ubuntu hefur klárað að ræsa þarf að búa sig til sem notanda. **ATH. þegar lykilorðið er slegið inn birtast hvorki stafir né tákn, lykilorðið er samt lesið inn.**
 
 ![Notandi](./Myndir/User.PNG)
 
