@@ -46,6 +46,9 @@ teljari=$(($teljari + 1))
 a=20
 b=10
 c=$(($a - $b))
+
+read -p "Sláðu inn þrjár tölur: " tala1 tala2 tala3
+echo "Þú slóst inn $tala1, $tala2 og $tala3. Summan af tölunum er $(($tala1+$tala2+$tala3))"
 ```
 
 ## Samanburðar- og rökvirkjar fyrir ```test```
