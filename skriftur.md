@@ -158,13 +158,14 @@ do
 done
 
 # Eða
+
 #!/bin/bash
 afangar="FORR1FG KEST1VL VEFÞ1VG VERK1VS"
 for afangi in $afangar; do
   echo "Ég er í $afangi"
 done
 ```
-#### Aðrar útfærslur af ```if``` 
+#### Aðrar útfærslur af ```for``` 
 ```bash
 for stafur in A B C D
 do
