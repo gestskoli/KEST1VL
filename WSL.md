@@ -78,6 +78,11 @@ Næst þarf að niðurhala Ubunut
 
 ---
 
-Þá er Ubuntu tilbúið til notkunar
+Þá er Ubuntu tilbúið til notkunar en áður en byrjað er að nota það er best að uppfæra það með því að gefa skipunina:
 
-![Ubuntu](./Myndir/Ubuntu.PNG)
+`sudo apt update && sudo apt upgrade`
+
+![Ubuntu](./Myndir/UbuntuUpgrade.PNG)
+
+
+
