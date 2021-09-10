@@ -154,7 +154,7 @@ esac
 ### for
 ```bash
 #!/bin/bash
-afangar="FORR1FG KEST1VL VEFÞ1VG VERK1VS"
+afangar="FORR1FG KEST1VL VEFÞ1VG VESM1VS"
 for afangi in $afangar
 do
   echo "Ég er í $afangi"
@@ -163,7 +163,7 @@ done
 # Eða
 
 #!/bin/bash
-afangar="FORR1FG KEST1VL VEFÞ1VG VERK1VS"
+afangar="FORR1FG KEST1VL VEFÞ1VG VESM1VS"
 for afangi in $afangar; do
   echo "Ég er í $afangi"
 done
