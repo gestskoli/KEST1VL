@@ -1,5 +1,19 @@
 # Uppsetning á Ubuntu með Windows Subsystem for Linux
 
+## Sjálfvirk uppsetning
+
+Einfaldast er, ef hægt, að setja upp WSL með því að opna `Windows PowerShell (admin)` glugga í Windows og slá inn eftirfarandi: 
+
+```powershell
+wsl --install
+```
+
+:+1: Ef það virkar farðu þá [hingað](#uppsetning-á-notanda-í-ubuntu).
+
+:-1: Ef það virkar ekki farðu þá eftir leiðbeiningunum um handvirka uppsetning.
+
+## Handvirk uppsetning
+
 Hægri smellið á Windows táknið og veljið **Apps and Features**
 
 ![Apps and Features](./Myndir/AppsAndFeatures.png)
@@ -60,7 +74,7 @@ Næst þarf að niðurhala Ubunut
 
 ![Ræsa Ubuntu](./Myndir/UbuntuStart.PNG)
 
----
+## Uppsetning á notanda í Ubuntu
 
 Það tekur smá stund fyrir Ubuntu að ræsa í fyrsta skipti
 
@@ -70,7 +84,7 @@ Næst þarf að niðurhala Ubunut
 
 Þegar Ubuntu hefur klárað að ræsa þarf að búa sig til sem notanda. 
 
-**Athuga** 
+:warning: **Athuga** :warning:
 - Notendanafn má ekki innihalda hástafi og má ekki byrja á tölustaf.
 - Þegar lykilorðið er slegið inn birtast hvorki stafir né tákn, lykilorðið er samt lesið inn.
 
@@ -80,7 +94,9 @@ Næst þarf að niðurhala Ubunut
 
 Þá er Ubuntu tilbúið til notkunar en áður en byrjað er að nota það er best að uppfæra það með því að gefa skipunina:
 
-`sudo apt update && sudo apt upgrade`
+```bash
+sudo apt update && sudo apt upgrade
+```
 
 ![Ubuntu](./Myndir/UbuntuUpgrade.PNG)
 
