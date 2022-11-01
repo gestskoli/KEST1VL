@@ -11,6 +11,7 @@ Tákn | Lyklar | Heiti | Enskt heiti
 `[` / `]` | AltGr + 8 / 9 | hornklofi | square brackets
 `` ` `` | AltGr + + | öfug komma | backtick
 `~`| AltGr + ? | bylgja | tilde
+`^`| AltGr + ´ | innskotsmerki (hattur) | caret
 
 ## Aðrar gagnlegar aðgerðir
 
