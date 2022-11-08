@@ -3,3 +3,5 @@ Lína sem endar á N
 Maturinn er búinn
 Tækniskólinn er skóli
 Maturinn í Tækniskólanum
+Ég segi halló
+Þú segir hello
