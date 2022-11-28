@@ -1,0 +1,1 @@
+# Lausn á "Æfingaverkefni í forritun með bash"
