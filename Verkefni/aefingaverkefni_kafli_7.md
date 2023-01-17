@@ -64,7 +64,7 @@ flowchart TB
 
 #### Færðu þig núna í `tolvubraut.is/js` möppuna og gerðu eftirfarandi aðgerð þar (notaðu *relative path*):
 
-1. Afritað `main.js` í möppuna frá `_template/js` möppunni.
+1. Afritaðu `main.js` í `tolvubraut.is/js` frá `_template/js` möppunni.
 
 #### Nýr "vefur"
 
