@@ -203,7 +203,7 @@ done
 [ 1 -eq 1 ]
 # $? inniheldur 0 (ekki villa)
 ```
-### ```$1```, $2, $3 o.s.frv. eru færibreytur sem hægt er að taka inn þegar skrifta er keyrð.
+### ```$1```, $2, $3 o.s.frv. eru færibreytur sem hægt er að taka inn þegar skrifta er keyrð. Hægt er að nota `$@` til að sækja allar færibreyturnar.
 ```bash
 #!/bin/bash
 echo $1
