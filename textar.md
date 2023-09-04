@@ -1,3 +1,3 @@
-Textar fyrir tímann 8. sept 2021
+Textar fyrir tímann kafla 10.
 
 `wget http://corpus.canterbury.ac.nz/resources/cantrbry.tar.gz`
