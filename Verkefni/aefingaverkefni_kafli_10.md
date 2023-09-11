@@ -67,7 +67,7 @@ fakenames.csv.
 
     Svar: 
 
-14. Hvað gerir þessi skipun: `egrep 'Unn(a|u)r' hallo.txt`?
+14. Hvað gerir þessi skipun: `egrep 'Unn(a|u)r' fakenames.csv`?
 
     Svar: 
 
