@@ -29,57 +29,57 @@ svo í skrána `fornofn.txt`.
 
     Svar: 
 
-5. Hvenær er betra að nota `more` skipun í stað `cat` þegar þú ætlar að skoða 
+3. Hvenær er betra að nota `more` skipun í stað `cat` þegar þú ætlar að skoða 
 innhald skráar?
 
     Svar: 
 
-6. Notaðu `less` skipunina til að finna nafnið "Helgi" í fakenames.csv skránni.
+4. Notaðu `less` skipunina til að finna nafnið "Helgi" í fakenames.csv skránni.
 
     Svar: 
 
-7. Hver er munurinn á `head` og `tail` skipuninni í linux?
+5. Hver er munurinn á `head` og `tail` skipuninni í linux?
 
     Svar: 
 
-8. Sýndu fyrstu 3 línurnar í fakenames.csv skránni með `head` skipuninni.
+6. Sýndu fyrstu 3 línurnar í fakenames.csv skránni með `head` skipuninni.
 
     Svar: 
 
-9.  Sýndu síðustu 4 línurnar í fakenames.csv skránni með `tail` skipuninni.
+7.  Sýndu síðustu 4 línurnar í fakenames.csv skránni með `tail` skipuninni.
 
     Svar: 
 
-10. Notaðu `grep` skipunina til að finna allar línur sem hafa stafina “eim” í 
+8. Notaðu `grep` skipunina til að finna allar línur sem hafa stafina “eim” í 
 fakenames.csv.
 
     Svar: 
 
-11. Notaðu `grep` skipunina til að finna allar línur sem byrja á tölustafnum 4.
+9. Notaðu `grep` skipunina til að finna allar línur sem byrja á tölustafnum 4.
 
     Svar: 
 
-12. Hvað gerir þessi skipun/skipanir: `grep '.y' fakenames.cvs`?
+10. Hvað gerir þessi skipun/skipanir: `grep '.y' fakenames.cvs`?
 
     Svar: 
 
-13. Hvað gerir þessi skipun:  `grep -E 'Jenný|Vaka|Elsa' fakenames.csv`?
+11. Hvað gerir þessi skipun:  `grep -E 'Jenný|Vaka|Elsa' fakenames.csv`?
 
     Svar: 
 
-14. Hvað gerir þessi skipun: `egrep 'Unn(a|u)r' fakenames.csv`?
+12. Hvað gerir þessi skipun: `egrep 'Unn(a|u)r' fakenames.csv`?
 
     Svar: 
 
-15. Hvað gerir þessi skipun: `head fakenames.csv | grep '[0-9]'`?
+13. Hvað gerir þessi skipun: `head fakenames.csv | grep '[0-9]'`?
 
     Svar: 
 
-16. Hvað gerir þessi skipun: `grep -E '[0-9]{3}' fakenames.csv`?
+14. Hvað gerir þessi skipun: `grep -E '[0-9]{3}' fakenames.csv`?
 
     Svar:
 
-17. Ef þú breytir skpuninni hér að ofan í `grep -E '\s[0-9]{3}\s' fakenames.csv` 
+15. Ef þú breytir skpuninni hér að ofan í `grep -E '\s[0-9]{3}\s' fakenames.csv` 
 hvað breytist þá? Hvað gerir `\s`?
 
     Svar:
@@ -90,7 +90,7 @@ hvað breytist þá? Hvað gerir `\s`?
 `fakenames.csv` skránni. Við hvern lið skrifaðu skipunina eða skipanirnar sem
 þú notaðir til að leysa liðinn.
 
-18. Búðu þér til nýja skrá (dalkar.txt) sem inniheldur nöfnin á dálkunum og 
+16. Búðu þér til nýja skrá (dalkar.txt) sem inniheldur nöfnin á dálkunum og 
 svo númer hvað þeir eru:
         1  Number
         2  Gender
@@ -102,12 +102,12 @@ svo númer hvað þeir eru:
 
     Skipun: 
 
-19. Hversu margir einstaklingar búa í póstnúmeri (ZipCode) 601? 
+17. Hversu margir einstaklingar búa í póstnúmeri (ZipCode) 601? 
         Svarið ætti að vera 23.
 
     Skipun: 
 
-20. Hvað heita þeir, sýndu fornafn (GivenName) og eftirnafn (SurName)?
+18. Hvað heita þeir, sýndu fornafn (GivenName) og eftirnafn (SurName)?
         Boði    Sigjónsson
         Böðvar  Hrafnsson
         ...
@@ -116,18 +116,18 @@ svo númer hvað þeir eru:
 
     Skipun: 
 
-21. Hversu margir eiga Volvo og búa á Súðavík.
+19. Hversu margir eiga Volvo og búa á Súðavík.
         Svarið ætti að vera 2.
     
     Skipun: 
 
-22. Hvað heita þessir einstaklingar (fornafn), hvernig Volvo eiga þeir?
+20. Hvað heita þessir einstaklingar (fornafn), hvernig Volvo eiga þeir?
         Jenný   2012 Volvo XC90
         Embla   2005 Volvo V50
 
     Skipun: 
 
-23. Hversu mörg mismunandi póstnúmer eru í fakenames skránni?
+21. Hversu mörg mismunandi póstnúmer eru í fakenames skránni?
         Svarið ætti að vera 141 (ath. ekki 142).
 
     Skipun: 
