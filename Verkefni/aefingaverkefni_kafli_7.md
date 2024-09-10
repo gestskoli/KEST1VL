@@ -26,6 +26,14 @@ flowchart TB
 
 :warning: Notaðu `tree` skipunina til að staðfesta að allar möppur hafi orðið til og á réttum stað.
 
+<details>
+<summary>Lausn</summary>
+
+```bash
+mkdir -p vefir/{_template,tolvubraut.is,tskoli.is}/{css,img,js}
+```
+</details>
+
 ### Búa til skrár
 
 Færðu þig í `_template` möppuna og búðu til skrárnar hér fyrir neðan. Gerðu þær allar úr `_template` möppunni (skrárnar þurfa ekki að innihalda neitt).
@@ -43,6 +51,19 @@ flowchart TB
 
 :warning: Notaðu `tree` skipunina til að staðfesta að allar skrárnar hafi orðið til og á réttum stað.
 
+<details>  
+<summary>Lausn</summary>
+    
+```bash
+cd vefir/_template
+touch index.html
+touch css/style.css
+touch img/logo.png
+touch js/main.js
+```
+
+</details>
+
 ### Afrita og færa
 
 #### Færðu þig í `vefir` möppuna og gerðu allar eftirfarandi aðgerðir þaðan:
@@ -52,23 +73,86 @@ flowchart TB
 1. Færðu `style.css` skrána yfir í `css` möppuna í `tskoli.is` (notaðu *relative path*).
 2. Afritaðu `style.css` svo í `css` möppuna í `_template` (notaðu *relative path*).
 
+<details>  
+<summary>Lausn</summary>
+    
+```bash
+cd
+cd vefir
+
+# /Users/[ÞITT_NOTENDANAFN] fyrir macos
+cp /home/[ÞITT_NOTENDANAFN]/vefir/_template/index.html /home/[ÞITT_NOTENDANAFN]/vefir/tskoli.is
+
+cp _template/index.html tolvubraut.is
+
+mv _template/css/style.css tskoli.is/css
+
+cp tskoli.is/css/style.css _template/css
+```
+
+</details>
+
 #### Færðu þig núna í `tskoli.is/img` möppuna og gerðu eftirfarandi aðgerðir þaðan (notaðu *relative path*):
 
 1. Afritaðu `logo.png` til þín. 
 2. Afritaðu `logo.png` úr `_template/img` yfir í `tolvubraut.is/css`.
 3. Færðu `logo.png` úr `tolvubraut.is/css` í `tolvubraut.is/img`.
 
+<details>
+<summary>Lausn</summary>
+
+```bash
+cd tskoli.is/img
+
+cp ../../_template/img/logo.png .
+
+cp ../../_template/img/logo.png ../../tolvubraut.is/css
+
+mv ../../tolvubraut.is/css/logo.png ../../tolvubraut.is/img
+```
+</details>
+
 #### Færðu þig núna í `template/js` möppuna og gerðu eftirfarandi aðgerð þar (notaðu *absolute path*):
 
 1. Afritaðu `main.js` í `tskoli.is/js` möppuna.
+
+<details>
+<summary>Lausn</summary>
+
+```bash
+cd /home/[ÞITT_NOTENDANAFN]/vefir/_template/js
+
+cp main.js /home/[ÞITT_NOTENDANAFN]/vefir/tskoli.is/js
+```
+</details>
 
 #### Færðu þig núna í `tolvubraut.is/js` möppuna og gerðu eftirfarandi aðgerð þar (notaðu *relative path*):
 
 1. Afritað `main.js` í möppuna frá `_template/js` möppunni.
 
+<details>
+<summary>Lausn</summary>
+
+```bash
+cd ../../tolvubraut.is/js
+
+cp ../../_template/js/main.js .
+```
+</details>
+
 #### Nýr "vefur"
 
 Bættu við nýjum "vef" en í stað þess að búa til fullt af möppum og skrám ætlar þú að afrita `_template` möppuna með öllu sem er í henni í nýja möppu sem á að heita `skoli.is`. Kynntu þér rofana sem eru í boði að `cp` skipuninni til að leysa þennan lið.
+
+<details>
+<summary>Lausn</summary>
+
+```bash
+cd 
+cd vefir
+cp -r _template skoli.is
+```
+</details>
 
 ### Lokin
 
@@ -94,7 +178,6 @@ vefir
 │       └── main.js
 ├── tolvubraut.is
 │   ├── css
-│   │   └── style.css
 │   ├── img
 │   │   └── logo.png
 │   ├── index.html
