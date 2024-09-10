@@ -94,7 +94,6 @@ vefir
 │       └── main.js
 ├── tolvubraut.is
 │   ├── css
-│   │   └── style.css
 │   ├── img
 │   │   └── logo.png
 │   ├── index.html
