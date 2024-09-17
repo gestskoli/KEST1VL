@@ -59,7 +59,7 @@ fakenames.csv.
 
     Svar: 
 
-10. Hvað gerir þessi skipun/skipanir: `grep '.y' fakenames.cvs`?
+10. Hvað gerir þessi skipun/skipanir: `grep '.y' fakenames.csv`?
 
     Svar: 
 
