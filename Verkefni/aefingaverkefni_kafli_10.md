@@ -21,68 +21,68 @@ Hafðu tvo linux glugga opna hjá þér.
 1. Notaðu `cut` skipunina til að prenta út öll fornöfn (e. given name) í 
 skránni.
    
-   Svar: 
+   Svar: `cut -f3 fakenames.csv`
 
 2. Notaðu `cut` og `sort` skipanirnar til að fá öll fornöfnin í stafrófsröð, 
 passaðu að ekkert nafn birtist oftar en einu sinni. Skrifaðu svo fornöfnin 
 svo í skrána `fornofn.txt`.
 
-    Svar: 
+    Svar: `cut -f3 fakenames.csv| sort -u >  fornofn.txt`
 
 3. Hvenær er betra að nota `more` skipun í stað `cat` þegar þú ætlar að skoða 
 innhald skráar?
 
-    Svar: 
+    Svar: Þegar skráin inniheldur meira en eitt skjáfylli af texta.
 
 4. Notaðu `less` skipunina til að finna nafnið "Helgi" í fakenames.csv skránni.
 
-    Svar: 
+    Svar: `less fakenames.csv` slá svo inn `/Helgi`
 
 5. Hver er munurinn á `head` og `tail` skipuninni í linux?
 
-    Svar: 
+    Svar: Head sýnir fyrstu línur skrár en tail síðustu.
 
 6. Sýndu fyrstu 3 línurnar í fakenames.csv skránni með `head` skipuninni.
 
-    Svar: 
+    Svar: `head -n 3 fakenames.csv`
 
 7.  Sýndu síðustu 4 línurnar í fakenames.csv skránni með `tail` skipuninni.
 
-    Svar: 
+    Svar: `tail -n 4 fakenames.csv`
 
 8. Notaðu `grep` skipunina til að finna allar línur sem hafa stafina “eim” í 
 fakenames.csv.
 
-    Svar: 
+    Svar: `grep 'eim' fakenames.csv`
 
 9. Notaðu `grep` skipunina til að finna allar línur sem byrja á tölustafnum 4.
 
-    Svar: 
+    Svar: `grep '^4' fakenames.csv`
 
 10. Hvað gerir þessi skipun/skipanir: `grep '.y' fakenames.csv`?
 
-    Svar: 
+    Svar: Finnur allar línur sem innihalda y og einhvern staf þar á undan.
 
 11. Hvað gerir þessi skipun:  `grep -E 'Jenný|Vaka|Elsa' fakenames.csv`?
 
-    Svar: 
+    Svar: Finnur allar línur sem innihalda orðin Jenný, Vaka eða Elsa.
 
 12. Hvað gerir þessi skipun: `egrep 'Unn(a|u)r' fakenames.csv`?
 
-    Svar: 
+    Svar: Finnur allar línur sem innihalda orðin Unnar eða Unnur.
 
 13. Hvað gerir þessi skipun: `head fakenames.csv | grep '[0-9]'`?
 
-    Svar: 
+    Svar: Finnur allar línur sem innihalda tölustaf í fyrstu 10 línunum í fakenames skránni.
 
 14. Hvað gerir þessi skipun: `grep -E '[0-9]{3}' fakenames.csv`?
 
-    Svar:
+    Svar: Finnur allar línur sem innihalda þrjá samliggjandi tölustafi líka þegar þeir eru hluti af stærri tölu.
 
 15. Ef þú breytir skipuninni hér að ofan í `grep -E '\s[0-9]{3}\s' fakenames.csv` 
 hvað breytist þá? Hvað gerir `\s`?
 
-    Svar:
+    Svar: Finnur allar línur sem innihalda þrjá samliggjandi tölustafi en ekki ef þeir eru hluti af stærri tölu. \s segir að finna bara leitarskilyrðið sem heilt orð.
 
 --------------------------------------------------------------------------------
 
@@ -100,12 +100,12 @@ svo númer hvað þeir eru:
         18  Centimeters
         19  Birthday
 
-    Skipun: 
+    Skipun: `head -n 1 fakenames.csv | tr '\t' '\n' | nl > dalkar.txt`
 
 17. Hversu margir einstaklingar búa í póstnúmeri (ZipCode) 601? 
         Svarið ætti að vera 23.
 
-    Skipun: 
+    Skipun: `cut -f7 fakenames.csv | grep '601' | wc -l`
 
 18. Hvað heita þeir, sýndu fornafn (GivenName) og eftirnafn (SurName)?
         Boði    Sigjónsson
@@ -114,20 +114,20 @@ svo númer hvað þeir eru:
         Hugrún  Gunnarsdóttir
         Gils    Hjálmtýsson
 
-    Skipun: 
+    Skipun: `cut -f3,4,7 fakenames.csv | grep '601' | cut -f1,2`
 
 19. Hversu margir eiga Volvo og búa á Súðavík.
         Svarið ætti að vera 2.
     
-    Skipun: 
+    Skipun: `grep 'Súðavík' fakenames.csv | grep 'Volvo' | wc -l`
 
 20. Hvað heita þessir einstaklingar (fornafn), hvernig Volvo eiga þeir?
         Jenný   2012 Volvo XC90
         Embla   2005 Volvo V50
 
-    Skipun: 
+    Skipun: `grep 'Súðavík' fakenames.csv | grep 'Volvo' | cut -f3,14`
 
 21. Hversu mörg mismunandi póstnúmer eru í fakenames skránni?
         Svarið ætti að vera 141 (ath. ekki 142).
 
-    Skipun: 
+    Skipun: `grep '^[0-9]' fakenames.csv | cut -f7 | sort -u | wc -l`, grep til að velja ekki efstu línuna sem inniheldur nöfnin á dálkunum.
