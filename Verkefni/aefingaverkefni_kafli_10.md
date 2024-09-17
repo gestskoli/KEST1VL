@@ -79,7 +79,7 @@ fakenames.csv.
 
     Svar:
 
-15. Ef þú breytir skpuninni hér að ofan í `grep -E '\s[0-9]{3}\s' fakenames.csv` 
+15. Ef þú breytir skipuninni hér að ofan í `grep -E '\s[0-9]{3}\s' fakenames.csv` 
 hvað breytist þá? Hvað gerir `\s`?
 
     Svar:
