@@ -9,7 +9,7 @@ Tákn | Lyklar | Heiti | Enskt heiti
 `\` | <kbd>AltGr</kbd> + <kbd>ö</kbd> | öfugt skástrik | backslash
 `{` / `}` | <kbd>AltGr</kbd> + <kbd>7</kbd> / <kbd>0</kbd> | slaufusvigi | curly braces
 `[` / `]` | <kbd>AltGr</kbd> + <kbd>8</kbd> / <kbd>9</kbd> | hornklofi | square brackets
-`` ` `` | <kbd>AltGr</kbd> + <kbd>+</kbd> | öfug komma | backtick
+`` ` `` | <kbd>AltGr</kbd> + <kbd>+</kbd>  og svo <kbd>Space</kbd> | öfug komma | backtick
 `~`| <kbd>AltGr</kbd> + <kbd>?</kbd> | bylgja | tilde
 `^`| <kbd>AltGr</kbd> + <kbd>´</kbd> | innskotsmerki (hattur) | caret
 
