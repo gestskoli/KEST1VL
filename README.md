@@ -3,6 +3,6 @@ KEST1VL - Vinnulag og Linux
 
 Til að sækja þessa geymslu sláið eftirfarandi inn í terminal:
 ```bash
-git clone git@github.com:gestskoli/KEST1VL.git
+git clone https://github.com/gestskoli/KEST1VL.git
 ```
 
