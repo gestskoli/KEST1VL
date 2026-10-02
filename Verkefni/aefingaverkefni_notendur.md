@@ -1,4 +1,4 @@
-# Æfingaverkefni 
+# Æfingaverkefni - Lausn
 ## Notendur, hópar og fleira
 
 ### 0. Undirbúningur
