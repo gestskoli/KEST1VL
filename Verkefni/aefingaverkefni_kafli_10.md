@@ -21,7 +21,7 @@ Hafðu tvo linux glugga opna hjá þér.
 1. Notaðu `cut` skipunina til að prenta út öll fornöfn (e. given name) í 
 skránni.
    
-   Svar: `cut -f3 fakenames.csv`
+   Svar: `cut -f3 fakenames.csv` eða `tail -n +2 fakenames.csv | cut -f3` (til að losna við hausinn (GivenName))
 
 2. Notaðu `cut` og `sort` skipanirnar til að fá öll fornöfnin í stafrófsröð, 
 passaðu að ekkert nafn birtist oftar en einu sinni. Skrifaðu svo fornöfnin 
